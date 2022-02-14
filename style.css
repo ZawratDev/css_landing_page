@@ -1,11 +1,12 @@
 body {
     /* font-family: "roboto"; */
     display: flex;
-    min-height: 100vh;
+    min-height: 100vh; /* Rozciąga całe body na wysokość ekranu, na którym się ogląda */
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
 }
+/* Usunięcie wszystkich bulletów z ul i dekoracji tekstu z linków */
 ul {
     list-style: none;
     padding: 0;
@@ -15,10 +16,7 @@ a {
     text-decoration: none;
     color: white;
 }
-.ccc{
-    display: flex;
-    justify-content: space-between;
-}
+
 .header, .section1, .section2, .section3, .section4, .footer {
     display: flex;
     justify-content: space-between;
@@ -33,6 +31,7 @@ a {
 .header {
     height: 70px;
     font-size: 24px;
+    padding-bottom: 50px;
 }
 
 .header ul {
@@ -41,8 +40,45 @@ a {
     gap: 20px;
 }
 .section1, .section2, .section3, .section4 {
-    flex: 1;
+    flex: 1; /* Bez tego konkretne sekcje nie zajmują całej dostępnej powierzchni na body*/
 }
 .section3 {
     background-color: #E5E7EB;
+}
+
+.section1 {
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 100px;
+    gap: 20px;
+}
+.section1 .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FaF8;
+    align-items: flex-start; /* Rozciąganie się przycisku Sign Up */
+}
+.section1 .text {
+    font-size: 18px;
+    font-weight: 500;
+}
+.section1 .img {
+    flex-shrink: 0;
+    text-align: center;
+    background-color: gray;
+    width: 300px;
+    padding: 90px;
+}
+
+.signup {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;; 
+    border: none;
+    border-radius: 8px;
+    background-color: #3882F6;
+    padding: 7px 25px;
+    margin-top: 10px;
 }
