@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
 body {
     /* font-family: "roboto"; */
     display: flex;
@@ -5,6 +6,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 /* Usunięcie wszystkich bulletów z ul i dekoracji tekstu z linków */
 ul {
@@ -35,7 +37,7 @@ a {
 }
 
 .header ul {
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     gap: 20px;
 }
@@ -47,7 +49,6 @@ a {
 }
 
 .section1 {
-    display: flex;
     align-items: stretch;
     padding-bottom: 100px;
     gap: 20px;
@@ -84,7 +85,6 @@ a {
 }
 
 .section2 {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -96,7 +96,7 @@ a {
 }
 
 .boxes {
-    margin: 10px;
+    margin-bottom: 50px;
     display: flex;
     gap: 60px;
 }
@@ -108,16 +108,15 @@ a {
     color: gray;
 }
 .box {
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     border-style: solid;
-    border-width: 5px;
-    border-radius: 7px;
+    border-width: 4px;
+    border-radius: 10px;
     border-color: #3882F6;
 }
 
 .section3 {
-    display: flex;
     justify-content: center;
     padding: 50px;
 }
@@ -133,6 +132,7 @@ a {
 .section3 .quote {
     display: flex;
     font-size: 36px;
+    font-style: italic;
     align-self: flex-end;
 }
 
@@ -140,4 +140,43 @@ a {
     align-self: flex-end;
     font-size: 21px;
     font-weight: 700;
+}
+
+.section4 {
+    justify-content: center;
+    padding: 50px 200px;
+}
+.bluebox {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 40px;
+    border-radius: 10px;
+    color: #F9FaF8;
+    background-color: #3882F6;
+}
+.invitation1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.invitation2 {
+    font-size: 16px;
+}
+
+.signup2 {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;; 
+    border: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    background-color: #3882F6;
+    padding: 7px 25px;
+}
+
+.footer {
+    justify-content: center;
+    padding: 40px;
+    font-size: 18px;
 }
